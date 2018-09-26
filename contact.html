@@ -1,0 +1,185 @@
+<?php 
+if (!empty($_POST['first_name']){
+	echo'this is the wrong code';
+}
+// if(isset($_POST['submit'])){
+//     $to = "lohatajean@gmail.com"; // this is your Email address
+//     $from = $_POST['email']; // this is the sender's Email address
+//     $first_name = $_POST['first_name'];
+//     $last_name = $_POST['last_name'];
+//     $subject = "Form submission";
+//     $subject2 = "Copy of your form submission";
+//     $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+//     $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
+
+//     $headers = "From:" . $from;
+//     $headers2 = "From:" . $to;
+//     mail($to,$subject,$message,$headers);
+//     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+//     echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+//     // You can also use header('Location: thank_you.php'); to redirect to another page.
+//     }
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title> MY MOBILE SHOP </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/myCss.css" />
+</head>
+
+<body>
+	<div id="firstHeader">
+		<h1>welcome in our shop </h1>
+	</div>
+	<div id="bodySite">
+		<div id="content">
+			<div id="header">
+				<div id="identite">
+					<div id="logo">
+						<img src="images/logo.png" />
+					</div>
+					<h1>computing</h1>
+					<h2>service</h2>
+				</div>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+						Service
+					</li>
+					<li>
+						<a href="team.html">Team</a>
+						For your needs
+					</li>
+					<li>
+						<a href="Service.html">Service</a>
+						All your needs
+					</li>
+					<li>
+						<a href="product.html">Product</a>
+						The best
+					</li>
+					<li>
+						<a href="contact.html" class="selected">Contact</a>
+						Our residence
+					</li>
+				</ul>
+
+
+			</div>
+			<div id="slidershow-contact">
+				<form action="" method="post">
+					First Name: <input type="text" name="first_name"><br>
+					Last Name: <input type="text" name="last_name"><br>
+					Email: <input type="text" name="email"><br>
+					Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+					<input type="submit" name="submit" value="Submit">
+				</form>
+				<!-- <form method="POST" action="mailto:lohatajean@gmail.com" enctype="text/plain">
+					<table>
+						<tr>
+							<td>
+								<input type=" text " name="text " placeholder="Your name " class="text_email " />
+							</td>
+							<td id="tel "> Tel : +30 694 542 1507</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text " name="text " placeholder="Your E-mail " class="text_name " />
+								<br />
+								<br />
+								<td id="tel ">Folegadrou 1, grece Athens</td>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<textarea class="area " placeholder="Your comment here "></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="submit" name="submitcom " id="submitcom " value="SEND MESSAGE " />
+							</td>
+						</tr>
+					</table>
+				</form> -->
+
+
+			</div>
+			<hr>
+
+
+
+			<div id="footer ">
+				<ul>
+					<li>
+						<h2> Sitmap </h2>
+					</li>
+					<li>
+						<a href="# ">Home</a>
+					</li>
+					<li>
+						<a href="# ">Team</a>
+					</li>
+					<li>
+						<a href="# ">Service</a>
+					</li>
+					<li>
+						<a href="# ">Product</a>
+					</li>
+
+				</ul>
+				<ul>
+					<li>
+						<h2> Social </h2>
+					</li>
+					<li>
+						<span class="facebook social ">
+							<a href="# ">
+								<img src="images/fb.png " width=20 />
+						</span>Facebook</a>
+					</li>
+					<li>
+						<span class="twitter social ">
+							<a href="# ">
+								<img src="images/twitter.png " width=20 />
+						</span>Twitter</a>
+					</li>
+					<li>
+						<span class="google social ">
+							<a href="# ">
+								<img src="images/google.png " width=20 />
+						</span>Google+</a>
+					</li>
+					<li>
+						<span class="kindlind social ">
+							<a href="# ">
+								<img src="images/youtube.png " width=20 />
+						</span>Lindind</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<h2> Contact </h2>
+					</li>
+					<li>Folegandrou, Athnes Grece</li>
+					<li>Tel : +30 694 542 1507 </li>
+					<li>
+						<a href="mailto:lohatajean@gmail.com ">lohatajean@gmail.com</a>
+					</li>
+					<li>
+						<a href="www.mywebsite.com ">www.my website.com </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="lastFooter ">
+			<h4>&Copy! Right John 2018</h4>
+			<div>
+			</div>
+</body>
+
+</html>
